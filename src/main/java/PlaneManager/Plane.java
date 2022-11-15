@@ -15,21 +15,8 @@ public class Plane {
         this.weight = weight;
     }
 
-
-    public String getModel() {
-        return model;
-    }
-
-    public String getPlaneType() {
-        return planeType;
-    }
-
     public int getYearOfManufacture() {
         return yearOfManufacture;
-    }
-
-    public int getPassengersCapacity() {
-        return passengersCapacity;
     }
 
     public int getWeight() {
