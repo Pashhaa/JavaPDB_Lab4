@@ -3,17 +3,18 @@ package PlaneManager;
 public class Plane {
     private final String model;
     private final String planeType;
-    private final int year;
+    private final int yearOfManufacture;
     private final int passengersCapacity;
     private final int weight;
 
-    public Plane(String model, String planeType, int year, int passengersCapacity, int weight) {
+    public Plane(String model, String planeType, int yearOfManufacture, int passengersCapacity, int weight) {
         this.model = model;
         this.planeType = planeType;
-        this.year = year;
+        this.yearOfManufacture = yearOfManufacture;
         this.passengersCapacity = passengersCapacity;
         this.weight = weight;
     }
+
 
     public String getModel() {
         return model;
@@ -23,8 +24,8 @@ public class Plane {
         return planeType;
     }
 
-    public int getYear() {
-        return year;
+    public int getYearOfManufacture() {
+        return yearOfManufacture;
     }
 
     public int getPassengersCapacity() {
@@ -37,6 +38,6 @@ public class Plane {
 
     @Override
     public String toString() {
-        return "Model: " + model + " Type: " + planeType + " Year: " + year + " Passengers: " + passengersCapacity + " Weight: " + weight;
+        return "Model: " + model + " Type: " + planeType + " Year: " + yearOfManufacture + " Passengers: " + passengersCapacity + " Weight: " + weight;
     }
 }
